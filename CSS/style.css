@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav" "header" "main" "footer";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.titulo {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+/* .sec-1 {
+    grid-area: sec-1;
+}
+
+.sec-2 {
+    grid-area: sec-2;
+}
+
+.sec-3 {
+    grid-area: sec-3;
+}
+
+.sec-4 {
+    grid-area: sec-4;
+} */
+
+footer {
+    grid-area: footer;
+}
