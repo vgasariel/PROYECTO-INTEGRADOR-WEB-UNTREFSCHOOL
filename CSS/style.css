@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
+
+/* Paleta de colores: #FC7300 , #1F8A70 , #00425A , #181823, #EFF5F5; */
+
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
@@ -8,19 +13,37 @@ body {
 
 a {
     text-decoration: none;
+    color: #EFF5F5;
 }
 
 ul {
     list-style-type: none;
     list-style-position: inside;
+    margin-top: 0;
+    padding: 0;
 }
 
 nav {
     grid-area: nav;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__item {
+    background-color: #00425A;
+    padding: .25em;
+    text-align: center;
+}
+
+.menu__item:active {
+    background-color: #1F8A70;
 }
 
 .titulo {
     grid-area: header;
+    font-family: 'Belanosima', sans-serif;
+    color: #1F8A70;
+    text-align: center;
 }
 
 main {
@@ -44,5 +67,17 @@ main {
 } */
 
 footer {
+    font-size: small;
     grid-area: footer;
+    background-color: #181823;
+    color: #EFF5F5;
+    padding: 1em;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer h4 {
+    margin-top: 0;
 }
