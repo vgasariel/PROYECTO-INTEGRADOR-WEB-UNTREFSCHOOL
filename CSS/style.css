@@ -133,3 +133,56 @@ footer h4 {
 .redes li {
     display: inline;
 }
+
+@media screen and (min-width: 768px) {   
+    nav {
+        position: sticky;
+        top: 0;
+    } 
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+
+    .menu__item {
+        text-align: center;
+        flex: content;
+    }
+
+    .prop_container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .sec-1 img, .sec-2 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer__item {
+        min-width: 25%;
+    }
+
+    .redes li {
+        display: block;
+        padding-top: .5em;
+    }
+
+    .redes h4 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
