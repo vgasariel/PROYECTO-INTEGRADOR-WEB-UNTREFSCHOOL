@@ -47,6 +47,7 @@ nav {
     grid-area: header;
     font-family: 'Belanosima', sans-serif;
     color: #1F8A70;
+    text-shadow: 2px 2px #181823;
     text-align: center;
 }
 
@@ -139,6 +140,7 @@ footer h4 {
         position: sticky;
         top: 0;
     } 
+
     .menu {
         display: flex;
         flex-direction: row;
@@ -184,5 +186,65 @@ footer h4 {
 }
 
 @media screen and (min-width: 1200px) {
+    .menu__item:hover {
+        background-color: #1F8A70;
+    }
+
+    .menu__item:active {
+        background-color: #FC7300;
+    }
     
+    header {
+        background-image: url(../img/aula.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        color: #EFF5F5;
+        text-shadow: 5px 5px #181823;
+        font-size: 5em;
+    }
+
+    section {
+        padding: 2em;
+    }
+
+    .sec-1, .sec-2 {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .sec-1 img, .sec-2 img {
+        margin: none;
+        width: 100%;
+    }
+
+    .sec-1 p, .sec-2 p {
+        margin: 1em 3em;
+        display: block;
+    }
+
+    .elij__item_2 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    
+    .prop_container {
+        grid-template-columns: repeat(4, auto);
+        padding: 4em;
+    }
+
+    footer {
+        align-items: flex-start;
+        font-size: medium;
+    }
+
+    .redes h4 {
+        display: block;
+    }
 }
