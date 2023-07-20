@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
 
-/* Paleta de colores: #FC7300 , #1F8A70 , #00425A , #181823, #EFF5F5; */
-
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -9,6 +7,7 @@ body {
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "nav" "header" "main" "footer";
+    background-color: #181823;
 }
 
 html {
@@ -40,6 +39,7 @@ nav {
 }
 
 .menu__item:active {
+    transition-duration: 0.2s;
     background-color: #1F8A70;
 }
 
@@ -47,7 +47,7 @@ nav {
     grid-area: header;
     font-family: 'Belanosima', sans-serif;
     color: #1F8A70;
-    text-shadow: 2px 2px #181823;
+    text-shadow: 2px 2px 2px #EFF5F5;
     text-align: center;
 }
 
@@ -135,6 +135,38 @@ footer h4 {
     display: inline;
 }
 
+.form__titulo {
+    color: #1F8A70;
+    text-align: center;
+}
+
+.formulario {
+    margin: 1em;
+    padding: 1em;
+    background-color: #EFF5F5;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input, textarea, button {
+    padding: .5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+label {
+    font-weight: 600;
+}
+
+input:focus, textarea:focus {
+    border: solid #FC7300;
+}
+
+button {
+    background-color: #FC7300;
+    color: #EFF5F5;
+}
+
 @media screen and (min-width: 768px) {   
     nav {
         position: sticky;
@@ -183,6 +215,11 @@ footer h4 {
     .redes h4 {
         display: none;
     }
+
+    .formulario {
+        padding: 1.5em;
+        margin: 1em 5em;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -204,7 +241,7 @@ footer h4 {
         align-items: center;
     }
 
-    h1 {
+    header h1 {
         color: #EFF5F5;
         text-shadow: 5px 5px #181823;
         font-size: 5em;
@@ -246,5 +283,23 @@ footer h4 {
 
     .redes h4 {
         display: block;
+    }
+
+    .form__titulo {
+        font-size: 3em;
+    }
+
+    .formulario {
+        padding: 2em;
+        margin: 1.5em 10em;
+    }
+
+    button {
+        opacity: 0.5;
+    }
+
+    button:hover {
+        transition-duration: 0.2s;
+        opacity: 1;
     }
 }
